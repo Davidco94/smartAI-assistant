@@ -133,7 +133,7 @@ class Widget():
 		speak("Hello sir , I am your P A")
 		speak("What can I Do For You.....")
 
-#..........................developed by gyanesh kumar on 24/07/20..............................
+#-------------------------------------------------------------------------
 		
 		canvas.pack()
 		getTime()
@@ -240,7 +240,7 @@ class Widget():
 					os.startfile(r'lehnga.mp3')
 		elif 'open music video' in query1:
 					speak("playing your favourite song video")
-					os.startfile(r'C:\Users\Gyanesh.Kumar\Desktop\jarvis download\Arijit Singh.mp4')
+					os.startfile(r'C:\Users\david\Desktop\jarvis download\Arijit Singh.mp4')
 					
 
 		elif 'write text' in query1:
@@ -290,7 +290,6 @@ class Widget():
 					print(con)
 					f.close()
 					speak('deleted last word')
-					#..........................developed by gyanesh kumar on 24/07/20.............................
 				elif 'delete last sentence' in query1:
 					f=open(r'demo.doc','r')
 					f.seek(0)
@@ -310,7 +309,7 @@ class Widget():
 
 				elif "*"  not in query1:
 					query1 = query1+"."
-					#os.startfile(r'C:\Users\Gyanesh.Kumar\Desktop\demo.doc')
+					#os.startfile(r'C:\Users\david\Desktop\demo.doc')
 					f=open(r'demo.doc','a+')
 					f.seek(0) #for changing the cursor position to start
 					old_content = f.read()
@@ -457,9 +456,9 @@ class Widget():
 				elif 'play music' in query1:
 							speak("playing your favourite song")
 							os.startfile(r'lehnga.mp3')
-				elif 'open music video' in query1:
-							speak("playing your favourite song video")
-							os.startfile(r'C:\Users\Gyanesh.Kumar\Desktop\jarvis download\Arijit Singh.mp4')
+				# elif 'open music video' in query1:
+				#			speak("playing your favourite song video")
+				#			os.startfile(r'C:\Users\david\Desktop\jarvis download\Arijit Singh.mp4')
 							
 
 				elif 'write text' in query1:
@@ -509,7 +508,6 @@ class Widget():
 							print(con)
 							f.close()
 							speak('deleted last word')
-							#..........................developed by gyanesh kumar on 24/07/20.............................
 						elif 'delete last sentence' in query1:
 							f=open(r'demo.doc','r')
 							f.seek(0)
@@ -564,7 +562,7 @@ class Widget():
 					speak("sorry i didnt get you. Please speak again.")
 
 if __name__ == '__main__':
-	#greetMe()
+	greetMe()
 	widget = Widget() 
 	speak("Good bye sir")       
 

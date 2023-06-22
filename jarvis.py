@@ -68,7 +68,7 @@ def myCommand():
 		print("Could not request results; {0}".format(e)) 
 		speak("I think your internet connection is down")
 
-#..........................developed by gyanesh kumar on 24/07/20..............................
+
 
 def greetMe():
 	currentH = int(datetime.datetime.now().hour)
